@@ -1,0 +1,12 @@
+# Dice roll simulator
+
+import random
+import time       # this is optional. To have more interactive feel during run time, I have used time module to give sleep for certain seconds.
+roll_again = 'yes'
+while roll_again == 'yes' or roll_again == 'y':
+    print("Rolling the two dice")
+    print("Following are the values")
+    time.sleep(1)
+    print(random.randint(1, 6))
+    print(random.randint(1, 6))
+    roll_again = input("Do you want to roll dice again?").lower()
