@@ -1,0 +1,15 @@
+# Fahrenheit to degree celsius converter
+
+temp_f = float(input("enter the temperature in fahrenheit"))
+temp_cel = (temp_f - 32) * 5/9
+print("Temperature in degree celsius:", round(temp_cel, 3))
+            
+            # Following is the alterante solution by defining a function. Please remove the docstrings to use the code.
+"""
+def convert(f):
+	c = (f - 32) * 5/9
+	return c
+  
+temp_cel = convert(103)       # temperature in fahrenheit is given as argumengt
+print("temperature in celsius:",round(temp_cel,3))
+"""
