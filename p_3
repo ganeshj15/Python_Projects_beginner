@@ -1,0 +1,9 @@
+# password generator
+# with the help of the following code, we can generate everytime a new password randomly.
+# Here we will take the help of random module
+
+length = int(input("enter the length of password:"))
+s = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%&.' # nearly all characters are included. You may add other symbols/special char in this string.
+import random
+password = ''.join(random.sample(s,length))
+print("Your password is:", password)
