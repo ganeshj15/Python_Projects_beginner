@@ -1,0 +1,51 @@
+# Quizz Game on Python
+
+def quiz(user_ans, ans):
+    global score
+    if user_ans.lower() == ans:
+        print("correct answer")
+        score += 1
+        print("your score is:", score)
+    else:
+        print("wrong answer")
+        print("your score is:", score)
+
+
+
+score = 0
+print("Welcome to the python assessment")
+print("Available topics in python are:")
+print("1.string\n2.list\n3.basics of python")
+print("Each question will have 1 mark")
+while True:
+    choice = int(input("Choose topic for quiz by selecting 1/2/3 "))
+    print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+    if choice == 1:
+        print("We will see the questions on strings ")
+        q1 = input("1.Strings are given in {}.True/False? ")
+        quiz(q1, 'false')
+        q2 = input('2.In python max length of string is 121 characters.True/False ')
+        quiz(q2, 'false')
+        q3 = input('3.Which method is used to divide string as per a particular seperator and o/p will be in list? ')
+        quiz(q3, 'split')
+        print("great going")
+        print()
+    elif choice == 2:
+        Q1 = input("1.What is background data structure for list? ")
+        quiz(Q1, 'array')
+        Q2 = input("2.lists are mutable or immutable?")
+        quiz(Q2, 'mutable')
+        Q3 = input('3.list supports heterogeneous data.True/False? ')
+        quiz(Q3, 'true')
+    elif choice == 3:
+        q_1 = input("1.python is case sensitive language. True/False? ")
+        quiz(q_1, "true")
+        q_2 = input('2.which symbol is used to comment purpose in python? ')
+        quiz(q_2, '#')
+        q_3 = input('3. which are the all logical operators in python ')
+        quiz(q_3, 'and, or, not')
+
+    next_topic = input("Do want to test your knowledge for other topics? (yes/no):").lower()
+    print("===========================================================")
+    if next_topic == 'no' or next_topic == 'n' :
+        break
