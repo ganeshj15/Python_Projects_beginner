@@ -1,0 +1,9 @@
+# Taking multiple user inputs
+
+# this task can be accomplished with while loop which is also called infinite loop. It will go on continuously unless mentioned condition is False.
+print("Following options are available")
+print("1.Python 2. JAVA 3. C++  4.exit")
+while True:
+	choice = int(input("enter your choice"))
+	if choice == 4:
+		break
