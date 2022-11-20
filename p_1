@@ -1,0 +1,8 @@
+# Create acronyms using python. ex: acronym of Artifical Intellegience will be AI
+
+words = input("Enter the words/phrases of which you want acronym:")
+sep_words = words.split()
+acronym = ''
+for i in sep_words:
+    acronym = acronym + i[0].upper()
+print("Acronym for the entered word is:",acronym)
