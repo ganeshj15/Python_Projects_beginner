@@ -1,0 +1,15 @@
+# Email Slicer
+
+email = input("enter the email id")
+words = email.split('@')
+print("User name is:",words[0])
+print("Domain name is:",words[1])
+
+# Following is the alternate solution by simply slicing method. To try following code,please remove docstrings.
+"""
+email = input("enter the email id")
+u_name = email[:email.index('@')
+print("User name :", u_name])
+d_name = email[email.index('@')+1:]
+print("domain:", d_name)
+"""
