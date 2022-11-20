@@ -1,0 +1,18 @@
+# Story generator in python
+"""
+'random' module shown in previous project i.e. password generator can also be used to generate random stories.
+Program will be such that everytime we will produce a new story. Initially we will store the part of the stories in lists.
+These parts/elements in the lists may be changed as per your story. Then we will take the help of random module to accomplish our task.
+"""
+
+import random
+when = ['A few years ago', 'Yesterday', 'Last night', 'A long time ago','On 20th Jan']
+who = ['a rabbit', 'an elephant', 'a mouse', 'a turtle','a cat','iron man']
+name = ['Ali', 'Miriam','daniel', 'Hoouk', 'Starwalker','ethan hunt']
+residence = ['Barcelona','India', 'Germany', 'Venice', 'England']
+went = ['cinema', 'university','seminar', 'school', 'laundry','jungle']
+happened = ['made a lot of friends','Eats a burger', 'found a secret key', 'solved a mistery', 'wrote a book','killed thynos']
+print(random.choice(when) + ', ' + random.choice(who) + ' that lived in ' + random.choice(residence) + ', went to the ' + random.choice(went) + ' and ' + random.choice(happened))
+
+# O/P
+# A few years ago, iron man that lived in Germany, went to the cinema and wrote a book.
