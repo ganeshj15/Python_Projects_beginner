@@ -1,0 +1,21 @@
+# QR code generator
+# for this, we need pyqrcode and png module. so please install those in your editor.
+
+import pyqrcode
+from pyqrcode import QRCode
+import png
+
+
+# String which represent the QR code
+s = "https://www.linkedin.com/in/ganesh-jambhrunkar-34124446/"
+
+# Generate QR code
+url = pyqrcode.create(s)
+
+# Create and save the png file naming "name.png"
+url.png("my_linkedin_account.png", scale=8)  # scale is used to vary size of code
+
+# Create and save the svg file naming "name.svg"
+url.svg("my_linkedin_account.svg", scale=8)  
+
+# the output of this program i.e. QR code will be saved in the program original directory.
